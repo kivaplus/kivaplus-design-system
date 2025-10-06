@@ -5,7 +5,7 @@
 
   A comprehensive React design system with accessible components built with TypeScript and Tailwind CSS.
 
-  [![npm version](https://badge.fury.io/js/@kivaplus%2Fdesign-system.svg)](https://badge.fury.io/js/@kivaplus%2Fdesign-system)
+  [![npm version](https://badge.fury.io/js/kivaplus-design-system.svg)](https://badge.fury.io/js/kivaplus-design-system)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
   [![Accessibility](https://img.shields.io/badge/WCAG-2.1%20AA-green.svg)](https://www.w3.org/WAI/WCAG21/quickref/)
@@ -24,7 +24,7 @@
 ## Installation
 
 ```bash
-npm install @kivaplus/design-system
+npm install kivaplus-design-system
 ```
 
 ### Peer Dependencies
@@ -42,7 +42,7 @@ npm install react react-dom
 Import the CSS file in your main application file:
 
 ```tsx
-import '@kivaplus/design-system/styles'
+import 'kivaplus-design-system/styles'
 ```
 
 ### 2. Configure Tailwind CSS (Optional)
@@ -54,7 +54,7 @@ If you're using Tailwind CSS in your project, you can extend the design system's
 module.exports = {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/@kivaplus/design-system/dist/**/*.{js,ts,jsx,tsx}'
+    './node_modules/kivaplus-design-system/dist/**/*.{js,ts,jsx,tsx}'
   ],
   // ... your config
 }
@@ -63,7 +63,7 @@ module.exports = {
 ## Usage
 
 ```tsx
-import { Button, Input, Card } from '@kivaplus/design-system'
+import { Button, Input, Card } from 'kivaplus-design-system'
 
 function App() {
   return (
@@ -136,7 +136,7 @@ See [ACCESSIBILITY.md](./ACCESSIBILITY.md) for detailed accessibility informatio
 The package includes full TypeScript definitions. All component props are typed for the best development experience.
 
 ```tsx
-import { InputProps } from '@kivaplus/design-system'
+import { InputProps } from 'kivaplus-design-system'
 
 const MyInput: React.FC<InputProps> = (props) => {
   return <Input {...props} />
@@ -150,7 +150,7 @@ const MyInput: React.FC<InputProps> = (props) => {
 A utility function for merging Tailwind CSS classes:
 
 ```tsx
-import { cn } from '@kivaplus/design-system'
+import { cn } from 'kivaplus-design-system'
 
 const className = cn('base-class', condition && 'conditional-class')
 ```

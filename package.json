@@ -1,10 +1,18 @@
 {
-  "name": "@kivaplus/design-system",
+  "name": "kivaplus-design-system",
   "private": false,
   "version": "1.0.0",
   "type": "module",
   "description": "A comprehensive React design system with accessible components built with TypeScript and Tailwind CSS",
-  "keywords": ["react", "design-system", "components", "typescript", "tailwind", "accessibility", "ui"],
+  "keywords": [
+    "react",
+    "design-system",
+    "components",
+    "typescript",
+    "tailwind",
+    "accessibility",
+    "ui"
+  ],
   "author": "Marcos Rangel <mrangel@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/kivaplus/kivaplus-design-system#readme",
