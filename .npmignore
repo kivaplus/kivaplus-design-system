@@ -1,0 +1,52 @@
+# Development files
+src/
+.storybook/
+.kiro/
+public/
+storybook-static/
+
+# Config files
+vite.config.ts
+tsconfig.json
+tsconfig.lib.json
+tsconfig.node.json
+tailwind.config.js
+postcss.config.js
+.eslintrc.js
+vitest.config.ts
+
+# Development dependencies
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Build artifacts (keep only dist/)
+*.tsbuildinfo
+
+# Git
+.git/
+.gitignore

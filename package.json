@@ -1,0 +1,80 @@
+{
+  "name": "@kivaplus/design-system",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A comprehensive React design system with accessible components built with TypeScript and Tailwind CSS",
+  "keywords": ["react", "design-system", "components", "typescript", "tailwind", "accessibility", "ui"],
+  "author": "Marcos Rangel <mrangel@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kivaplus/kivaplus-design-system#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kivaplus/kivaplus-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kivaplus/kivaplus-design-system/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "ACCESSIBILITY.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:lib": "tsc --project tsconfig.lib.json && vite build --mode lib",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-icons": "^1.3.2",
+    "@tanstack/react-table": "^8.21.3",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.4.0",
+    "playwright": "^1.55.1",
+    "postcss": "^8.5.6",
+    "storybook": "^8.6.14",
+    "tailwindcss": "^4.1.13",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.44.0",
+    "vite": "^6.0.1",
+    "vitest": "^3.2.4"
+  }
+}
